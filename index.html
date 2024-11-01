@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Espantos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Casa de Espantos</h1>
+  </header>
+  
+  <!-- Instrucciones separadas debajo del header -->
+  <div id="instructions">
+    <p>¡Derrota a todos los fantasmas que puedas antes de que se acabe el tiempo!</p>
+  </div>
+  <main>
+    <div id="sidebar">
+      <p id="score">Puntuación: 0</p>
+      <p id="timer">Tiempo: 30s</p>
+      <button id="startButton">Iniciar</button>
+      <button id="restartButton">Reiniciar</button>
+      <button id="endButton" onclick="endGame()">Terminar</button>
+    </div>
+    <div id="gameContainer">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por: Marin Flores, Ruiz Trejo y Moussignac.</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
